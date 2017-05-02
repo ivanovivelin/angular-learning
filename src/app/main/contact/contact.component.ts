@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-// import {MdSnackBar} from '@angular/material';
+import { MdSnackBar } from '@angular/material';
+import { MdInputContainer } from '@angular/material';
 
 export interface User {
   email: any;
@@ -11,9 +12,6 @@ export interface User {
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styles: [`
-    input.ng-invalid {
-      border: 1px solid red;
-    }
     `]
 })
 export class ContactComponent implements OnInit {
@@ -33,12 +31,18 @@ export class ContactComponent implements OnInit {
   @Input()
   zoom = 8;
 
-  constructor() { }
+  constructor(public snackBar: MdSnackBar) { }
 
   ngOnInit() {
   }
 
   onSubmit(form: NgForm) {
     console.log('Form to be submitted ! =>', form.value);
+  }
+
+  openSnackBar() {
+    this.snackBar.open('Email is sent !', '', {
+  duration: 3000
+});
   }
 }

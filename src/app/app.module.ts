@@ -11,6 +11,8 @@ import { ContactComponent } from './main/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AgmCoreModule } from '@agm/core';
+import { AppMaterialModule } from './material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
+    AppMaterialModule,
+    FlexLayoutModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A'
     })
