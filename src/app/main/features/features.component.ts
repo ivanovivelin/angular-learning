@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './features.component.html',
 })
 export class FeaturesComponent {
-  private first_feature = 'GELÄNDER';
-  private second_feature = 'TORE';
-  private third_feature = 'ZAUN';
+  public first_feature = 'GELÄNDER';
+  public second_feature = 'TORE';
+  public third_feature = 'ZAUN';
 }

@@ -3,6 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 html,
 body {
   height: 100%;
@@ -155,7 +156,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('assets/test.jpg');
+  background-image: url('assets/rsz_final_pic.png');
   text-align: center;
   color: white;
 }

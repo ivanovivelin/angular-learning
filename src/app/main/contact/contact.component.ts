@@ -16,7 +16,7 @@ export interface User {
 })
 export class ContactComponent implements OnInit {
 
-  private user: User = {
+  public user: User = {
     email: '',
     name: '',
     message: ''

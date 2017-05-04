@@ -1,6 +1,29 @@
+<!--
 <body class="landing-page">
 	<app-navbar></app-navbar>
 	<app-header></app-header>
-	<app-main></app-main>
+	<app-main>
+		<router-outlet></router-outlet>
+	</app-main>
 	<app-footer></app-footer>
 </body>
+-->
+<body class="landing-page">
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<!-- footer -->
+<app-footer></app-footer>
+</body>
+<go-top-button [html]="'<button md-button>Share</button>'"
+                 [animate]="true"
+                 [speed]="50"
+                 [acceleration]="2"
+                 [scrollDistance]="750"
+                 [styles]="{
+                 }">
+  </go-top-button>
