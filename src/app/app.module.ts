@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {TranslateService} from '@ngx-translate/core';
 import { MainComponent } from './main/main.component';
 import { FeaturesComponent } from './main/features/features.component';
 import { ContactComponent } from './main/contact/contact.component';
@@ -20,7 +21,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RailingsComponent } from './main/features/railings/railings.component';
-import {GoTopButtonModule} from 'ng2-go-top-button';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -36,20 +37,22 @@ import {GoTopButtonModule} from 'ng2-go-top-button';
     HeaderComponent,
   ],
   imports: [
-    GoTopButtonModule,
+    SharedModule,
     BrowserModule,
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     FlexLayoutModule,
+    // HeaderModule,
     NoopAnimationsModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A'
     })
   ],
-  providers: [],
+  exports: [SharedModule],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

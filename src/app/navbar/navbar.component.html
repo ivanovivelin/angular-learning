@@ -14,10 +14,29 @@
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
 					<li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-						<a routerLink="/" md-button aria-disabled="true" >Home</a>
+						<a routerLink="/" aria-disabled="true" >Home</a>
 					</li>
                     <li routerLinkActive="active">
-						<a routerLink="/about" md-button aria-disabled="true" >About</a>
+						<a routerLink="/about" aria-disabled="true" >About</a>
+					</li>
+					<li routerLinkActive="active">
+						<a routerLink="/contact" aria-disabled="true" >Contact</a>
+					</li>
+					<li>
+						
+						<select [(ngModel)]="selectedValue" (change)="translate.use(selectedValue)">
+							<option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+						</select>
+						<!--
+						<button md-icon-button [mdMenuTriggerFor]="menu">
+						<md-icon>translate</md-icon>
+						</button>
+						<md-menu #menu="mdMenu">
+						<button md-menu-item *ngFor="let lang of translate.getLangs()">
+							<span (change)="translate.use(lang)">{{lang}}</span>
+						</button>
+						</md-menu>
+						-->
 					</li>
 		            <li>
 		                <a href="" target="_blank" class="btn btn-simple btn-white btn-just-icon">

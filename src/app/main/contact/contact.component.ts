@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MdSnackBar } from '@angular/material';
 import { MdInputContainer } from '@angular/material';
+import {TranslateService} from '@ngx-translate/core';
 
 export interface User {
   email: any;
@@ -31,7 +32,7 @@ export class ContactComponent implements OnInit {
   @Input()
   zoom = 8;
 
-  constructor(public snackBar: MdSnackBar) { }
+  constructor(public snackBar: MdSnackBar, public translate: TranslateService) { }
 
   ngOnInit() {
   }
