@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { RailingsComponent } from './main/features/railings/railings.component';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
+import {ContactMainComponent} from './contact/contact-main.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
@@ -17,6 +18,10 @@ const routes: Routes = [
     {
         path: 'railings',
         component: RailingsComponent
+    },
+    {
+        path: 'contact',
+        component: ContactMainComponent
     },
 
     // otherwise redirect to home

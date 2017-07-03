@@ -31,7 +31,7 @@ import {
     MdSnackBarModule,
     MdGridListModule,
     MdMenuModule,
-    MdSelectModule
+    MdSelectModule,
   ],
   declarations: [],
   exports: [

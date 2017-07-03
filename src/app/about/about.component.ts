@@ -6,5 +6,4 @@ import {TranslateService} from '@ngx-translate/core';
   templateUrl: './about.component.html',
 })
 export class AboutComponent {
-    constructor(public translate: TranslateService) { }
 }

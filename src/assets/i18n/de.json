@@ -1,8 +1,55 @@
 {
   "HOME": {
-    "SELECT": "Change language",
-    "title": "Willkommen bei Dorex",
-    "subtitle": "Wählen Sie eine Metallzaun der perfekt zu Ihrem Haus passt <br> Dorex bittet Ihnen hochwertige Sortiment und eine schnelle Lieferung",
-    "product": "Bei der Herstellung von Zäunen und Toren verwenden wir nur hochwertigen polnischen Stahl. Dies garantiert Ihnen langjährige Haltbarkeit.Unsere Stahlelemente werden entweder Feuerverzinkt oder galvanisiert. Beschichtet werden Sie in unserer Hauseigenen Pulverbeschichungsanlage. Wählen Sie aus unseren unzähligen Produkten Online oder bestellen Sie einfach einen unserer Mitarbeiter zu einer kostenlosen Beratung vor Ort. Wir werden uns freuen, Sie als unsere Kunden begrüßen zu dürfen."
+    "toolbar": {
+        "sideMenuTooltipMsgHome": "Home page",
+        "sideMenuTooltipMsgAbout": "About us page",
+        "sideMenuTooltipMsgContact": "Contact page"
+    },
+    "SELECT": "Sprache",
+    "menu": {
+        "contact": "Kontakt",
+        "about": "Über uns"
+    },
+    "page": {
+        "title": "Willkommen bei Dorex",
+        "subtitle": "Wählen Sie eine Metallzaun der perfekt zu Ihrem Haus passt<br>Dorex bittet Ihnen hochwertige Sortiment und eine schnelle Lieferung."
+    },
+    "product": {
+        "title": "Über uns",
+        "content": "Bei der Herstellung von Zäunen und Toren verwenden wir nur hochwertigen polnischen Stahl.Dies garantiert Ihnen langjährige Haltbarkeit.Unsere Stahlelemente werden entweder Feuerverzinkt oder galvanisiert. Beschichtet werden Sie in unserer Hauseigenen Pulverbeschichungsanlage. Wählen Sie aus unseren unzähligen Produkten Online oder bestellen Sie einfach einen unserer Mitarbeiter zu einer kostenlosen Beratung vor Ort. Wir werden uns freuen, Sie als unsere Kunden begrüßen zu dürfen.",
+        "productList": {
+            "gelander": {
+                "title": "GELÄNDER",
+                "text": "Bei uns finden Sie Geländer für drinnen und draussen. Ein hochwertiges und stilvolles Geländer, das sich durch seine zahlreichen Details und sein modernes Design auszeichnet."
+            },
+            "tore": {
+                "title": "TORE",
+                "text": "Die Torfüllung kann auch an Ihren Wünschen entsprechen. Bei der  Herstellung von Toren verwenden wir nur hochwertigen polnischen Stahl. </br>"
+            },
+            "zaun": {
+                "title": "ZAUN",
+                "text": "Ein moderner Zaun von höchster Qualität und Design. Bei uns erhalten Sie den passenden Zaun für Ihr Vorhaben auch individuell nach Ihrem Geschmack. </br>"
+            }
+        },
+        "about": {
+            "title": "Über uns",
+            "content": "Unsere Firma, die seit Jahren in Europa tätig ist, freut sich Ihnen unsere Produkte vorstellen zu dürfen.Erfüllen Sie sich Ihren Wunsch mit unserem hochwertigem und breit gefächertem Sortiment. Schmücken Sie Ihr zu Hause mit den ausgefallensten Ideen und verleihen Sie Ihrem Grundstück den letzten, passenden Schliff. Egal ob ausgemalt, pulverbeschichtet und in welcher Farbe, wir erfüllen Ihnen jeden Wunsch."
+        },
+        "contact": {
+            "location": "Position",
+            "title": "Kontakt",
+            "contentPL": {
+                "title": "DOREX PL",
+                "phone": "691-602-098",
+                "email": "ddorex@wp.pl",
+                "address": "Kozłów 6<br>59-700 Bolesławiec"
+            },
+            "contentAT": {
+                "title": "DOREX AT, WIEN",
+                "phone": "+436763946754",
+                "email": "ddorex@wp.pl"
+            }
+        }
+    }
   }
 }

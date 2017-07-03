@@ -6,6 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
-  selectedValue: string;
+  public isCollapsed = false;
+  selectedValue: string = 'de';
   constructor(public translate: TranslateService) { }
 }

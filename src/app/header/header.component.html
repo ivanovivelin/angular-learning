@@ -3,8 +3,8 @@
             <div class="container">
                 <div class="row">
 					<div class="col-md-6">
-						<h1 class="title">{{ 'HOME.title' | translate }}</h1>
-	                    <h4>{{ 'HOME.subtitle' | translate }}</h4>
+						<h1 class="title">{{ 'HOME.page.title' | translate }}</h1>
+	                    <h4 [innerHTML]="'HOME.page.subtitle' | translate"></h4>
 	                    <br />
 						<!--
 	                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
@@ -12,9 +12,6 @@
 						</a>
 						-->
 						<div class="center-block">
-						<button md-icon-button class="mybutton">
-							<md-icon style="font-size: 48px">keyboard_arrow_down</md-icon>
-						</button>
 					</div>
 					</div>
                 </div>

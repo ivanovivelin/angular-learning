@@ -21,7 +21,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RailingsComponent } from './main/features/railings/railings.component';
+import {ContactMainComponent} from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import { SharedModule } from './shared/shared.module';
     FooterComponent,
     ContactComponent,
     HeaderComponent,
+    ContactMainComponent,
   ],
   imports: [
     SharedModule,
@@ -47,6 +51,7 @@ import { SharedModule } from './shared/shared.module';
     // HeaderModule,
     NoopAnimationsModule,
     AppRoutingModule,
+    NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A'
     })

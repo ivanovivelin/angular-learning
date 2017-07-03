@@ -1,8 +1,39 @@
 {
   "HOME": {
     "SELECT": "Change language",
-    "title": "Willkommen bei Dorex",
-    "subtitle": "Wählen Sie eine Metallzaun der perfekt zu Ihrem Haus passt <br> Dorex bittet Ihnen hochwertige Sortiment und eine schnelle Lieferung",
-    "product": " POLISH Bei der Herstellung von Zäunen und Toren verwenden wir nur hochwertigen polnischen Stahl. Dies garantiert Ihnen langjährige Haltbarkeit.Unsere Stahlelemente werden entweder Feuerverzinkt oder galvanisiert. Beschichtet werden Sie in unserer Hauseigenen Pulverbeschichungsanlage. Wählen Sie aus unseren unzähligen Produkten Online oder bestellen Sie einfach einen unserer Mitarbeiter zu einer kostenlosen Beratung vor Ort. Wir werden uns freuen, Sie als unsere Kunden begrüßen zu dürfen."
+    "menu": {
+        "contact": "Kontakt",
+        "about": "O nas"
+    },
+    "page": {
+        "title": "Witamy",
+        "subtitle": "Szukasz ogrodzenia, ktore najelpeiej będzie pasowalo do twojej posiadlosci?<br>Jestes na odpowiedniej stronie !"
+    },
+    "product": {
+        "title": "O nas",
+        "content": "Nasze produkty charakteryzują się bogatym wzornictwem oraz stylem. Przedstawiamy produkty najwyższej jakości, które są tworzone z solidnych materialow a co więcej ochronią odgrodzony teren oraz poprawiąja jego wizerunek.",
+        "productList": {
+            "tore": {
+                "title": "BRAMY",
+                "text": "Olbrzymi wybór furtek pozwoli znaleźć każdemu  dobre rozwiazanie. Do produkcji furtek używamy stal. Realizujemy również indywidualne projekty."
+            },
+            "zaun": {
+                "title": "PLOT",
+                "text": "Oferujemy Panstwu bramy wjazdowe dwuskrzydłowe i przesuwne, ktore wykonane są z najwyższej jakosci. &emsp;&emsp;"
+            },
+            "gelander": {
+                "title": "Poręcz",
+                "text": "Oferujemy Państwu balustrady wewnętrzne i zewnętrzne wysokiej jakości, która charakteryzuje się wieloma szczegółami i nowoczesnym wzornictwem."
+            }
+        },
+        "about": {
+            "title": "O nas",
+            "content": "Unsere Firma, die seit Jahren in Europa tätig ist, freut sich Ihnen unsere Produkte vorstellen zu dürfen.Erfüllen Sie sich Ihren Wunsch mit unserem hochwertigem und breit gefächertem Sortiment. Schmücken Sie Ihr zu Hause mit den ausgefallensten Ideen und verleihen Sie Ihrem Grundstück den letzten, passenden Schliff. Egal ob ausgemalt, pulverbeschichtet und in welcher Farbe, wir erfüllen Ihnen jeden Wunsch."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "content": ""
+        }
+    }
   }
 }
