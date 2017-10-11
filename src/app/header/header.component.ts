@@ -7,4 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   constructor(public translate: TranslateService) { }
+
+  scroll() {
+    window.scrollTo(400, 2000);
+  }
 }

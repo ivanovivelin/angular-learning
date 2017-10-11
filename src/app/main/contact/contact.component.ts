@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { MdSnackBar } from '@angular/material';
-import { MdInputContainer } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 import {TranslateService} from '@ngx-translate/core';
 
 export interface User {
@@ -12,10 +12,9 @@ export interface User {
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styles: [`
-    `]
+  styles: [``]
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
   public user: User = {
     email: '',
@@ -32,18 +31,26 @@ export class ContactComponent implements OnInit {
   @Input()
   zoom = 8;
 
-  constructor(public snackBar: MdSnackBar, public translate: TranslateService) { }
+  constructor(public snackBar: MatSnackBar, public translate: TranslateService) { }
 
-  ngOnInit() {
-  }
+  /**
+   * @author Ivelin Ivanov
+   * @param form {}
+   * @desc function to submit the form
+   */
 
   onSubmit(form: NgForm) {
     console.log('Form to be submitted ! =>', form.value);
   }
 
+  /**
+   * @author Ivelin Ivanov
+   * @desc notification on sending emails
+   */
+
   openSnackBar() {
     this.snackBar.open('Email is sent !', '', {
-  duration: 3000
-});
+    duration: 3000
+  });
   }
 }

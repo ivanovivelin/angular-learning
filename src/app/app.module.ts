@@ -12,7 +12,6 @@ import { FeaturesComponent } from './main/features/features.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { AgmCoreModule } from '@agm/core';
 import { AppMaterialModule } from './material/material.module';
@@ -20,15 +19,28 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { RailingsComponent } from './main/features/railings/railings.component';
+import { RailingsComponent } from './main/features/gelander/railings.component';
+import { DoorsComponent } from './main/features/zaun/doors.component';
+import { FenceComponent } from './main/features/tore/fence.component';
 import {ContactMainComponent} from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { AngularFireModule } from 'angularfire2';
+// for AngularFireDatabase
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
+// for AngularFireAuth
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
 
+import * as firebase from 'firebase';
+/*
+const app = firebase.initializeApp({
+  
+});
+*/
 @NgModule({
   declarations: [
-    AboutComponent,
     RailingsComponent,
     AppComponent,
     NavbarComponent,
@@ -39,8 +51,20 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     HeaderComponent,
     ContactMainComponent,
+    DoorsComponent,
+    FenceComponent
   ],
   imports: [
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A',
+      authDomain: 'dorex-prod.firebaseapp.com',
+      databaseURL: 'https://dorex-prod.firebaseio.com',
+      projectId: 'dorex-prod',
+      storageBucket: 'dorex-prod.appspot.com',
+      messagingSenderId: '342130392500'
+    }),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     SharedModule,
     BrowserModule,
     FormsModule,
@@ -51,7 +75,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     // HeaderModule,
     NoopAnimationsModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A'
     })
