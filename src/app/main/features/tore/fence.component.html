@@ -1,19 +1,8 @@
-<div style="margin: 50px;">
-        <mat-card>
-                <mat-card-title>TORE</mat-card-title>
-                <mat-card-content>
-                <mat-grid-list [cols]="cols | async" rowHeight="250px" gutterSize="16px">
-                        <mat-grid-tile  *ngFor="let dog of dogs" [style.background-repeat]="'no-repeat'">
-                                <img [alt]="dog.name" src="assets/terasse.jpeg">
-                                <mat-grid-tile-footer>
-                                  <h3 mat-line>TORE</h3>
-                                  <!--
-                                  <span mat-line>Human: {{dog.human}}</span>
-                                  -->
-                                  <mat-icon>star_border</mat-icon>
-                                </mat-grid-tile-footer>
-                        </mat-grid-tile>
-                </mat-grid-list>
-                </mat-card-content>
-        </mat-card>
+<div style="margin:20px;">
+                <mat-card>
+                        <mat-card-title>{{'HOME.product.productList.tore.title' | translate}}</mat-card-title>
+                        <mat-card-content>
+                                <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+                        </mat-card-content>
+                </mat-card>
 </div>

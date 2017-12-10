@@ -3,8 +3,8 @@
 				<div class="dorex-inner">
 						<div class="dorex-intro-text" flex>
 							<h2>{{'HOME.product.title' | translate}}</h2>
-							<p>
-								{{'HOME.product.content' | translate}}
+							<p [innerHTML]="'HOME.product.content' | translate">
+						
 							</p>
 						</div>
 				</div>
@@ -39,7 +39,7 @@
 											-->
 											<button mat-button routerLink="/railings" color="accent">
 											<mat-icon class="mat-24">expand_more</mat-icon>
-											More
+											{{'HOME.product.productList.gelander.button' | translate}}
 											</button>
 										</mat-card-actions>
 									</mat-card>
@@ -65,7 +65,7 @@
 											-->
 											<button mat-button color="accent" routerLink="/fence" >
 											<mat-icon class="mat-24">expand_more</mat-icon>
-											More
+											{{'HOME.product.productList.tore.button' | translate}}
 											</button>
 										</mat-card-actions>
 									</mat-card>
@@ -91,7 +91,7 @@
 											-->
 											<button mat-button routerLink="/doors" color="accent">
 											<mat-icon class="mat-24">expand_more</mat-icon>
-											More
+											{{'HOME.product.productList.zaun.button' | translate}}
 											</button>
 										</mat-card-actions>
 											</mat-card>
@@ -121,14 +121,14 @@
 </div>
 -->
 <!-- Contact us -->
-<div class="dorex-intro-section" style="margin-top: 50px;">
+<div class="dorex-final-section" style="margin-top: 50px;">
 		<div class="dorex-inner">
 				<div class="dorex-intro-text">
 					<p [innerHTML]="'HOME.product.about.content' | translate">
 					</p>
-					<button mat-button color="accent">
+					<a mat-button color="accent" href="https://www.facebook.com/dorexogrodzenia/" target="_blank">
 							<mat-icon class="mat-24">group_add</mat-icon>
-								Find us on Facebook</button>
+								Find us on Facebook</a>
 				</div>
 		</div>
 </div>
@@ -148,9 +148,8 @@
 								<div class="form-group label-floating">
 									<mat-form-field class="example-full-width">
 										<input
-										matTooltip="Enter your name"
 										matInput 
-										placeholder="Your name" 
+										placeholder="Name" 
 										id="name"
 										[(ngModel)]="user.name"
 										name="name"
@@ -163,9 +162,8 @@
 								<div class="form-group label-floating">
 									<mat-form-field class="example-full-width">
 										<input
-										matTooltip="Enter your e-mail"
 										matInput 
-										placeholder="Your email"
+										placeholder="E-mail"
 										id="email"
 										[(ngModel)]="user.email"
 										name="email"
@@ -183,13 +181,12 @@
 							<div class="form-group label-floating">
 								<mat-form-field class="example-full-width">
 								<textarea
-								matTooltip="Enter your message here"
 								#message="ngModel"
 								id="message"
 								[(ngModel)]="user.message"
 								name="message"
 								matInput 
-								placeholder="Your message" 
+								placeholder="Message" 
 								rows="6" 
 								required></textarea>
 								</mat-form-field>

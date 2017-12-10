@@ -33,6 +33,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
 import * as firebase from 'firebase';
 /*
 const app = firebase.initializeApp({
@@ -63,6 +65,7 @@ const app = firebase.initializeApp({
       storageBucket: 'dorex-prod.appspot.com',
       messagingSenderId: '342130392500'
     }),
+    NgxGalleryModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     SharedModule,

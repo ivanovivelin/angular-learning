@@ -49,6 +49,11 @@ body {
     font-size: 20px;
   }
 }
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
 /** uncomment if you want fixed header **/
 .fixed-header {
   //top: 0;
@@ -156,7 +161,33 @@ body {
   position: relative;
   //background-color: #4051b4;
   background-size: cover;
-  height: 300px;
+  height: 450px;
+}
+@media screen and (max-width: 480px) {
+  .dorex-intro-section {
+    text-align: center;
+    position: relative;
+    //background-color: #4051b4;
+    background-size: cover;
+    height: 700px;
+  }
+}
+
+.dorex-final-section {
+  text-align: center;
+  position: relative;
+  //background-color: #4051b4;
+  background-size: cover;
+  height: 200px;
+}
+@media screen and (max-width: 480px) {
+  .dorex-final-section {
+    text-align: center;
+    position: relative;
+    //background-color: #4051b4;
+    background-size: cover;
+    height: 400px;
+  }
 }
 
 .dorex-inner {
