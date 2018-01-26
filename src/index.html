@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <script>
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-            console.log('Service Worker registered');
-          }).catch(function(err) {
-            console.log('Service Worker registration failed: ', err);
-          });
-        }
-      </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Dorex</title>
@@ -18,11 +9,15 @@
   <meta name="description" content="Dorex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <app-root>
+      <noscript>
+          <h3 style="color: #7B1FA2; font-family: Helvetica; margin: 2rem;">
+            Sorry, but app is not available without javascript
+          </h3>
+      </noscript>
     <mat-progress-bar mode="indeterminate">
        Loading...
     </mat-progress-bar>
