@@ -1,8 +1,10 @@
 <div style="margin:20px;">
-                <mat-card>
-                        <mat-card-title>{{'HOME.product.productList.gelander.title' | translate}}</mat-card-title>
-                        <mat-card-content>
-                                <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
-                        </mat-card-content>
-                </mat-card>
+<h2>{{'HOME.product.productList.gelander.title' | translate}}</h2>
+        <gallery
+                [flexBorderSize]="3" 
+                [flexImageSize]="6"
+                [galleryName]="'GelanderGallery'"
+                (viewerChange)="mynotifier($event)"
+        >
+        </gallery>
 </div>

@@ -6,10 +6,9 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 import { MainComponent } from './main/main.component';
 import { FeaturesComponent } from './main/features/features.component';
-import { ContactComponent } from './main/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -22,8 +21,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { RailingsComponent } from './main/features/gelander/railings.component';
 import { DoorsComponent } from './main/features/zaun/doors.component';
 import { FenceComponent } from './main/features/tore/fence.component';
-import {ContactMainComponent} from './contact/contact-main.component';
+import { ContactMainComponent } from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery/src/app/angular2imagegallery.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 import { AngularFireModule } from 'angularfire2';
 // for AngularFireDatabase
@@ -36,11 +38,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { NgxGalleryModule } from 'ngx-gallery';
 
 import * as firebase from 'firebase';
-/*
-const app = firebase.initializeApp({
-  
-});
-*/
 @NgModule({
   declarations: [
     RailingsComponent,
@@ -50,13 +47,14 @@ const app = firebase.initializeApp({
     MainComponent,
     FeaturesComponent,
     FooterComponent,
-    ContactComponent,
     HeaderComponent,
     ContactMainComponent,
     DoorsComponent,
-    FenceComponent
+    FenceComponent,
+    // GalleryComponent
   ],
   imports: [
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A',
       authDomain: 'dorex-prod.firebaseapp.com',
@@ -65,6 +63,7 @@ const app = firebase.initializeApp({
       storageBucket: 'dorex-prod.appspot.com',
       messagingSenderId: '342130392500'
     }),
+    Angular2ImageGalleryModule,
     NgxGalleryModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
@@ -75,7 +74,6 @@ const app = firebase.initializeApp({
     BrowserAnimationsModule,
     AppMaterialModule,
     FlexLayoutModule,
-    // HeaderModule,
     NoopAnimationsModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
@@ -86,4 +84,4 @@ const app = firebase.initializeApp({
   providers: [TranslateService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

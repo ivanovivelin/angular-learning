@@ -8,7 +8,7 @@ import { MatSidenav } from '@angular/material';
 })
 export class NavbarComponent {
   public isCollapsed = false;
-  selectedValue: string = 'de';
+  selectedValue = 'de';
   @Input() public sidenavRef: MatSidenav;
   constructor(public translate: TranslateService) { }
 }

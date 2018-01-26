@@ -7,9 +7,6 @@
 				</button>
 				<span class="example-spacer"></span>
 				<mat-icon class="example-icon" routerLink="/" >home</mat-icon>
-				<!--
-				<mat-icon class="example-icon" routerLink="/about">nature_people</mat-icon>
-				-->
 				<mat-icon class="example-icon" routerLink="/contact">contact_mail</mat-icon>
 			    <mat-icon [matMenuTriggerFor]="menu" class="example-icon" >translate</mat-icon>
 				
@@ -18,14 +15,4 @@
 					<span>{{lang}}</span>
 				</button>
 				</mat-menu>
-			
-			<!--
-			<mat-form-field class="example-icon">
-					<mat-select>
-					  <mat-option *ngFor="let lang of translate.getLangs()" selected="lang == translate.currentLang" [value]="lang" (click)="translate.use(lang)">
-						{{ lang }}
-					  </mat-option>
-					</mat-select>
-				</mat-form-field>
-			-->
 </mat-toolbar>

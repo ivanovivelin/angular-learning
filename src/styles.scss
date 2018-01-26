@@ -90,6 +90,45 @@ body {
     margin-left: auto;
     background-color: #4051b4;
     // min-height: 700px;
+
+}
+
+.docs-footer {
+  margin-top: 40px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.docs-footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.footer-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 8px;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0 40px;
+  padding: 0;
 }
 //background: url('assets/rsz_final_pic.png');
 
