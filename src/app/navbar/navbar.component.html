@@ -8,11 +8,20 @@
 				<span class="example-spacer"></span>
 				<mat-icon class="example-icon" routerLink="/" >home</mat-icon>
 				<mat-icon class="example-icon" routerLink="/contact">contact_mail</mat-icon>
-			    <mat-icon [matMenuTriggerFor]="menu" class="example-icon" >translate</mat-icon>
+				<mat-form-field style="width:60px;">
+				<mat-select placeholder="" [value]="selectedValue">
+					<mat-option *ngFor="let lang of translate.getLangs()" [value]="lang" (click)="translate.use(lang)">
+					  {{ lang }}
+					</mat-option>
+				  </mat-select>
+				</mat-form-field>
+			    <!--<mat-icon [matMenuTriggerFor]="menu" class="example-icon" >translate</mat-icon>-->
 				
+				<!--
 				<mat-menu #menu="matMenu">
 				<button mat-menu-item *ngFor="let lang of translate.getLangs()" (click)="translate.use(lang)">
 					<span>{{lang}}</span>
 				</button>
 				</mat-menu>
+				-->
 </mat-toolbar>

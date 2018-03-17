@@ -158,6 +158,26 @@ body {
   flex: 1 1 auto;
 }
 
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow,
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger {
+  color: white;
+}
+
+.mat-select-arrow,
+.mat-select-disabled .mat-select-value,
+.mat-select-trigger {
+  color: white;
+
+}
+
+.mat-form-field-underline .mat-form-field-ripple {
+  color:white;
+}
+
+.mat-select-value {
+  color: white;
+}
+
 .dorex-header-section {
   text-align: center;
   position: relative;

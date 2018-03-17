@@ -1,20 +1,17 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-src/assets/GELANDER
-src/assets/TORE
-src/assets/ZAUN
-src/assets/img
+/src/environments/environment.prod.ts
+/src/environments/environment.ts
+NOTES.md
+functions/*
 
 # compiled output
 /dist
 /tmp
 /out-tsc
-/functions
-
 
 # dependencies
 /node_modules
-/functions
 
 # IDEs and editors
 /.idea
@@ -32,10 +29,15 @@ src/assets/img
 !.vscode/launch.json
 !.vscode/extensions.json
 
+src/assets/GELANDER
+src/assets/TORE
+src/assets/ZAUN
+src/assets/img
+
 # misc
 /.sass-cache
 /connect.lock
-/coverage
+/coverage/*
 /libpeerconnection.log
 npm-debug.log
 testem.log
@@ -48,3 +50,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Firebase
+.firebaserc
+
+node_modules/
