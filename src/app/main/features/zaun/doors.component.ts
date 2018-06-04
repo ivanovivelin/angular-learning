@@ -1,6 +1,6 @@
 import { Component , OnInit} from '@angular/core';
 import { ObservableMedia } from '@angular/flex-layout';
-import { Observable } from 'rxjs/Observable';
+import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
 
 @Component({
   selector: 'app-doors',
@@ -8,7 +8,15 @@ import { Observable } from 'rxjs/Observable';
 })
 export class DoorsComponent implements OnInit {
 
-  constructor(private observableMedia: ObservableMedia) {}
+  imageData = [
+    {
+      src: 'assets/ZAUN.jpeg',
+      srcThumb: 'assets/ZAUN.jpeg'
+    }
+    // ... more items
+  ];
+
+  constructor(private observableMedia: ObservableMedia, private gallery: Gallery) {}
 
   /**
    * @desc ngOnInit
@@ -16,7 +24,13 @@ export class DoorsComponent implements OnInit {
    * @param {}
    */
 
-  ngOnInit() {}
+  ngOnInit() {
+    // Creates gallery items
+    const items: GalleryItem[] = this.imageData.map(item => new ImageItem(item.src, item.srcThumb));
+
+    // loads the items into the gallery
+    this.gallery.ref('myPhotos').load(items);
+  }
 
   /**
    * @author Ivelin Ivanov

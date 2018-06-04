@@ -23,7 +23,8 @@ import { DoorsComponent } from './main/features/zaun/doors.component';
 import { FenceComponent } from './main/features/tore/fence.component';
 import { ContactMainComponent } from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery/src/app/angular2imagegallery.module';
+import { GalleryModule } from '@ngx-gallery/core';
+// import { Angular2ImageGalleryModule } from 'angular2-image-gallery/angular2imagegallery.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -63,7 +64,10 @@ import * as firebase from 'firebase';
       storageBucket: 'dorex-prod.appspot.com',
       messagingSenderId: '342130392500'
     }),
-    Angular2ImageGalleryModule,
+    GalleryModule.forRoot({
+      thumbPosition: 'left'
+    }),
+   // Angular2ImageGalleryModule,
     NgxGalleryModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
@@ -78,7 +82,8 @@ import * as firebase from 'firebase';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA5_j1wX-uyz1MJCa5MnAOO08F1EVrca3A'
-    })
+    }),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   exports: [SharedModule],
   providers: [TranslateService],

@@ -53,7 +53,7 @@ export class FeaturesComponent {
           duration: 3000
         });
         form.reset();
-    }catch (e) {
+    } catch (e) {
       console.error(e);
     }
   }
