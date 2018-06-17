@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /* You can add global styles to this file, and also import other style files */
-@import '~@ngx-gallery/core/styles/gallery';
 @import 'angular-meterial-theme.scss';
 html,
 body {
@@ -55,13 +54,6 @@ body {
   transform: none !important;
 }
 
-/** uncomment if you want fixed header **/
-.fixed-header {
-  //top: 0;
-  //position: fixed;
-  //z-index:999;
-  //top: 0
-}
 // stretch to screen size in fullscreen mode
 .demo-content {
   margin: 0;

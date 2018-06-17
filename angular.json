@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "dorex-my-angular": {
-      "root": "",
+      "root": "src",
       "sourceRoot": "src",
       "projectType": "application",
       "architect": {
@@ -84,7 +84,6 @@
             "assets": [
               "src/assets",
               "src/service-worker.js",
-              "src/manifest.json",
               "src/manifest.json"
             ]
           }

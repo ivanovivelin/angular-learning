@@ -1,6 +1,6 @@
 import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, InjectionToken } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,8 +23,9 @@ import { DoorsComponent } from './main/features/zaun/doors.component';
 import { FenceComponent } from './main/features/tore/fence.component';
 import { ContactMainComponent } from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
-import { GalleryModule } from '@ngx-gallery/core';
-// import { Angular2ImageGalleryModule } from 'angular2-image-gallery/angular2imagegallery.module';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+
+// import { HighlightModule } from '@ngx-highlightjs';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -36,9 +37,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-import { NgxGalleryModule } from 'ngx-gallery';
-
 import * as firebase from 'firebase';
+
 @NgModule({
   declarations: [
     RailingsComponent,
@@ -64,11 +64,7 @@ import * as firebase from 'firebase';
       storageBucket: 'dorex-prod.appspot.com',
       messagingSenderId: '342130392500'
     }),
-    GalleryModule.forRoot({
-      thumbPosition: 'left'
-    }),
-   // Angular2ImageGalleryModule,
-    NgxGalleryModule,
+    Angular2ImageGalleryModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     SharedModule,

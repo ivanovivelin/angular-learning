@@ -19,7 +19,6 @@
  */
 
 /** IE9, IE10 and IE11 requires all of the following polyfills. **/
-import 'web-animations-js/web-animations.min';
 import 'hammerjs/hammer';
 
 import 'core-js/es6/symbol';
@@ -40,8 +39,6 @@ import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
-
-import 'web-animations-js';
 // custom polyfills
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
