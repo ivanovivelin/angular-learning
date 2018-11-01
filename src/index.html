@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Dorex</title>
   <base href="/">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Dorex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,9 +18,14 @@
             Sorry, but app is not available without javascript
           </h3>
       </noscript>
-    <mat-progress-bar mode="indeterminate">
-       Loading...
-    </mat-progress-bar>
+      <div class="loading-page">
+        <div class="spinner">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
    </app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
