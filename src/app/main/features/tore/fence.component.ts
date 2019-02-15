@@ -1,5 +1,4 @@
 import { Component , OnInit} from '@angular/core';
-import { ObservableMedia } from '@angular/flex-layout';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class FenceComponent implements OnInit {
 
-  constructor(private observableMedia: ObservableMedia) {}
+  constructor() {}
 
   /**
    * @desc calculate the size and change the amount of column on mat-tiles

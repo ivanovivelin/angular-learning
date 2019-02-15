@@ -1,6 +1,4 @@
 import { Component , OnInit} from '@angular/core';
-import { ObservableMedia } from '@angular/flex-layout';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-railings',
@@ -8,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class RailingsComponent implements OnInit {
 
-  constructor(private observableMedia: ObservableMedia) {}
+  constructor() {}
 
   /**
    * @description ngOnInit

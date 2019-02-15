@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/
 import { NgForm } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase } from '@angular/fire/database';
 import * as firebase from 'firebase/app';
 
 import { Subscription } from 'rxjs/Subscription';

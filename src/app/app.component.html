@@ -1,19 +1,17 @@
 <mat-sidenav-container [class.m2app-dark]="isDarkTheme" fullscreen>
         <mat-sidenav #sidenav mode="over" class="app-sidenav" color="primary">
-               
-                        <button *ngFor="let navItem of navItems"
-                            mat-button
+                <button *ngFor="let navItem of navItems"
+                        mat-button
                         color="primary"
-                           routerLinkActive
-                           #routerLinkActiveInstance="routerLinkActive"
-                           [attr.tabindex]="routerLinkActiveInstance.isActive ? 0 : -1"
-                           [routerLink]="[navItem.route]">
-                          {{navItem.name}}
+                        routerLinkActive
+                        #routerLinkActiveInstance="routerLinkActive"
+                        [attr.tabindex]="routerLinkActiveInstance.isActive ? 0 : -1"
+                        [routerLink]="[navItem.route]"
+                >
+                        {{navItem.name}}
                 </button>
-                
-
                 <button mat-button color="primary" tabindex="-1" (click)="sidenav.close()">X</button>
-            </mat-sidenav>
+        </mat-sidenav>
         <div>
                 <app-navbar [sidenavRef]="sidenav"></app-navbar>
                 <div #root="dir" dir="ltr" class="demo-content" >
@@ -21,6 +19,6 @@
                                 <router-outlet></router-outlet>
                         </main>
                 </div>
-              </div>
-             <app-footer></app-footer>
+        </div>
+        <app-footer></app-footer>
 </mat-sidenav-container>

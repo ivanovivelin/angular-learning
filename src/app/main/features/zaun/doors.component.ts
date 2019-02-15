@@ -1,7 +1,4 @@
 import { Component , OnInit} from '@angular/core';
-import { ObservableMedia } from '@angular/flex-layout';
-import { Observable } from 'rxjs/Observable';
-import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -10,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./doors.component.scss']
 })
 export class DoorsComponent {
-  constructor(private observableMedia: ObservableMedia) {}
+  constructor() {}
 
   /**
    * @author Ivelin Ivanov
