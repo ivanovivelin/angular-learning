@@ -11,12 +11,7 @@ import { Subscription } from 'rxjs/Subscription';
 import 'firebase/auth';
 import 'firebase/database';
 import { AgmCoreModule } from '@agm/core';
-import {ThemePalette} from '@angular/material/core';
-
-export interface ChipColor {
-  name: string;
-  color: ThemePalette;
-}
+import { ThemePalette } from '@angular/material/core';
 
 export interface User {
   email: any;
@@ -40,13 +35,6 @@ export class FeaturesComponent {
     name: '',
     message: ''
   };
-
-  availableColors: ChipColor[] = [
-    {name: 'none', color: undefined},
-    {name: 'Primary', color: 'primary'},
-    {name: 'Accent', color: 'accent'},
-    {name: 'Warn', color: 'warn'}
-  ];
   public first_feature = 'GELÄNDER';
   public second_feature = 'TORE';
   public third_feature = 'ZAUN';
@@ -63,17 +51,17 @@ export class FeaturesComponent {
 
   public onSubmit(form: NgForm) {
     try {
-      this.af.database.ref('/messages/' + form.value.userData.name).set({
-        username: form.value.userData.email,
-        email: form.value.userData.email,
-        profile_picture : form.value.userData.message
-      });
+        this.af.database.ref('/messages/' + form.value.userData.name).set({
+          username: form.value.userData.email,
+          email: form.value.userData.email,
+          profile_picture : form.value.userData.message
+        });
         this.snackBar.open('Thank you for contacting us !', '', {
           duration: 3000
         });
         form.reset();
     } catch (e) {
-      console.error(e);
+        console.error(e);
     }
   }
 }
