@@ -11,6 +11,12 @@ import { Subscription } from 'rxjs/Subscription';
 import 'firebase/auth';
 import 'firebase/database';
 import { AgmCoreModule } from '@agm/core';
+import {ThemePalette} from '@angular/material/core';
+
+export interface ChipColor {
+  name: string;
+  color: ThemePalette;
+}
 
 export interface User {
   email: any;
@@ -21,6 +27,7 @@ export interface User {
 @Component({
   selector: 'app-features',
   templateUrl: './features.component.html',
+  styleUrls: ['features.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false
 })
@@ -33,6 +40,13 @@ export class FeaturesComponent {
     name: '',
     message: ''
   };
+
+  availableColors: ChipColor[] = [
+    {name: 'none', color: undefined},
+    {name: 'Primary', color: 'primary'},
+    {name: 'Accent', color: 'accent'},
+    {name: 'Warn', color: 'warn'}
+  ];
   public first_feature = 'GELÄNDER';
   public second_feature = 'TORE';
   public third_feature = 'ZAUN';

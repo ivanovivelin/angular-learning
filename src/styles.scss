@@ -6,15 +6,38 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'angular-meterial-theme.scss';
 @font-face { font-family: "Helvetica-Neue-Bold"; src: url("./assets/fonts/helvetica-neue-bold.ttf"); }
+@font-face { font-family: "Helvetica-Neue-Medium"; src: url("./assets/fonts/HelveticaNeueMedium.woff"); }
+
 html,
 body {
-  font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+  font-family: Helvetica-Neue-Medium, 'Helvetica Neue Medium', sans-serif;
 
   // Helps fonts on OSX looks more consistent with other systems
   // Isn't currently in button styles due to performance concerns
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h2 {
+    font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  mat-card-title {
+    font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+  }
+
+  .mat-drawer-container {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  p {
+    font-family: Helvetica-Neue-Medium, 'Helvetica Neue Medium', sans-serif;
   }
 
   .mat-sidenav {
@@ -180,7 +203,7 @@ body {
 }
 
 .logo-font {
-  font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+  font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif !important;
   line-height: 1;
   color: rgb(255, 255, 255);
   font-weight: 500;
@@ -216,14 +239,14 @@ body {
   position: relative;
   //background-color: #4051b4;
   background-size: cover;
-  height: 450px;
+  //height: 450px;
 }
 @media screen and (max-width: 480px) {
   .dorex-intro-section {
     text-align: center;
     position: relative;
     background-size: cover;
-    height: 700px;
+    //height: 700px;
   }
 }
 

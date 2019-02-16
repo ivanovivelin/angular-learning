@@ -6,11 +6,20 @@
 							<p [innerHTML]="'HOME.product.content' | translate">
 						
 							</p>
+							<mat-chip-list>
+								<mat-chip color="accent" selected>Zweiflügeltore</mat-chip>
+								<mat-chip color="accent" selected>Gehtüren</mat-chip>
+								<mat-chip color="accent" selected>Terassendächer aus Polycarbonat</mat-chip>
+								<mat-chip color="accent" selected>Zaunfälder</mat-chip>
+								<mat-chip color="accent" selected>Balkone</mat-chip>
+								<mat-chip color="accent" selected>Geländer</mat-chip>
+								<mat-chip color="accent" selected>Stahlkonstruktionen</mat-chip>
+							  </mat-chip-list>
 						</div>
 				</div>
 		</div>
 		<!-- MD CARDS -->
-		<div id="screens" style="margin-bottom: 30px;flex-wrap:wrap;margin-right: -15px;margin-left: -15px;padding:10px;">
+		<div id="screens" style="flex-wrap:wrap;">
 				<div 
 						fxLayout
 						fxLayout.sm="column"
@@ -128,7 +137,7 @@
 									<mat-form-field class="example-full-width">
 										<input
 										matInput 
-										placeholder="E-mail"
+										placeholder="E-Mail"
 										id="email"
 										[(ngModel)]="user.email"
 										name="email"
@@ -151,7 +160,7 @@
 								[(ngModel)]="user.message"
 								name="message"
 								matInput 
-								placeholder="Message" 
+								placeholder="Nachricht" 
 								rows="6" 
 								required></textarea>
 								</mat-form-field>
