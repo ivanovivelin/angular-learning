@@ -17,6 +17,7 @@ export interface User {
   email: any;
   name: string;
   message: string;
+  timestamp: Date;
 }
 
 @Component({
@@ -33,7 +34,8 @@ export class FeaturesComponent {
   public user: User = {
     email: '',
     name: '',
-    message: ''
+    message: '',
+    timestamp: new Date
   };
   public first_feature = 'GELÄNDER';
   public second_feature = 'TORE';
@@ -52,11 +54,12 @@ export class FeaturesComponent {
   public onSubmit(form: NgForm) {
     try {
         this.af.database.ref('/messages/' + form.value.userData.name).set({
-          username: form.value.userData.email,
+          name: form.value.userData.name,
           email: form.value.userData.email,
-          profile_picture : form.value.userData.message
+          message : form.value.userData.message,
+          timestamp: new Date().toString()
         });
-        this.snackBar.open('Thank you for contacting us !', '', {
+        this.snackBar.open('Danke für Ihre Nachricht !', '', {
           duration: 3000
         });
         form.reset();
