@@ -1,0 +1,10 @@
+<div style="margin:20px;">
+        <h2>{{'HOME.product.productList.gelander.title' | translate}}</h2>
+        <gallery
+                [flexBorderSize]="3" 
+                [flexImageSize]="6"
+                [galleryName]="'GelanderGallery'"
+                (viewerChange)="mynotifier($event)"
+        >
+        </gallery>
+</div>

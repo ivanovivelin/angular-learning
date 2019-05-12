@@ -7,32 +7,49 @@
     },
     "page": {
         "title": "Witamy",
-        "subtitle": "Szukasz ogrodzenia, ktore najelpeiej będzie pasowalo do twojej posiadlosci?<br>Jestes na odpowiedniej stronie !"
+        "subtitle": "Szukasz ogrodzenia, ktore będzie pasowalo do twojej posiadlosci?<br>Jestes na odpowiedniej stronie !"
     },
     "product": {
         "title": "O nas",
-        "content": "Nasze produkty charakteryzują się bogatym wzornictwem oraz stylem. Przedstawiamy produkty najwyższej jakości, które są tworzone z solidnych materialow a co więcej ochronią odgrodzony teren oraz poprawiąja jego wizerunek.",
+        "content": "Nasze produkty charakteryzują się bogatym wzornictwem oraz stylem. Przedstawiamy produkty najwyższej jakości, które są tworzone z solidnych materialow. <br><br>Firma Dorex oferuje szeroki wybór asortymentu z zakresu ogrodzeń.<br> Znajdą u nas Państwo: ",
+        "content_feature1": "bramy dwuskrzydłowe",
+        "content_feature2": "bramy przesuwne",
+        "content_feature3": "furtki",
+        "content_feature4": "zadaszenia tarasowe poliwęglanem",
+        "content_feature5": "przęsła-balkony-balustrady",
+        "content_feature6": "konstrukcje stalowe",
+        "content_feature7": "bramy",
         "productList": {
             "tore": {
                 "title": "BRAMY",
+                "button": "Więcej",
                 "text": "Olbrzymi wybór furtek pozwoli znaleźć każdemu  dobre rozwiazanie. Do produkcji furtek używamy stal. Realizujemy również indywidualne projekty."
             },
             "zaun": {
-                "title": "PLOT",
+                "title": "OGRODZENIA",
+                "button": "Więcej",
                 "text": "Oferujemy Panstwu bramy wjazdowe dwuskrzydłowe i przesuwne, ktore wykonane są z najwyższej jakosci. &emsp;&emsp;"
             },
             "gelander": {
-                "title": "Poręcz",
+                "title": "BALUSTRADY",
+                "button": "Więcej",
                 "text": "Oferujemy Państwu balustrady wewnętrzne i zewnętrzne wysokiej jakości, która charakteryzuje się wieloma szczegółami i nowoczesnym wzornictwem."
             }
         },
         "about": {
             "title": "O nas",
-            "content": "Unsere Firma, die seit Jahren in Europa tätig ist, freut sich Ihnen unsere Produkte vorstellen zu dürfen.Erfüllen Sie sich Ihren Wunsch mit unserem hochwertigem und breit gefächertem Sortiment. Schmücken Sie Ihr zu Hause mit den ausgefallensten Ideen und verleihen Sie Ihrem Grundstück den letzten, passenden Schliff. Egal ob ausgemalt, pulverbeschichtet und in welcher Farbe, wir erfüllen Ihnen jeden Wunsch."
+            "content": "Posiadamy również lakiernie proszkową. Elementy stalowe cynkujemy ogniowo lub galwanicznie oraz malujemy  proszkowo. <br> Bogata oferta gwarantuje, że znajdą u nas Państwo ogrodzenia na miarę swoich potrzeb i możliwości finansowych. <br> Zapraszamy !"
         },
         "contact": {
+            "location": "Lokalizacja",
+            "subtitle": "",
             "title": "Kontakt",
-            "content": ""
+            "content": {
+                "title": "DOREX PL",
+                "phone": "+48 691-602-098",
+                "email": "ddorex@wp.pl",
+                "address": "Kozłów 6<br>59-700 Bolesławiec"
+            }
         }
     }
   }

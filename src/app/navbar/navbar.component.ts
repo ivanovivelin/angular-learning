@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent {
   public isCollapsed = false;
-  selectedValue: string = 'de';
+  selectedValue = 'de';
+  @Input() public sidenavRef: MatSidenav;
   constructor(public translate: TranslateService) { }
 }

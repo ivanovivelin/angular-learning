@@ -1,0 +1,10 @@
+<div style="margin:20px;">
+    <h2>{{'HOME.product.productList.tore.title' | translate}}</h2>
+    <gallery
+                [flexBorderSize]="3" 
+                [flexImageSize]="6"
+                [galleryName]="'ToreGallery'"
+                (viewerChange)="galleryNotifier($event)"
+        >
+    </gallery>
+</div>

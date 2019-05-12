@@ -1,0 +1,10 @@
+<div>
+        <h2>{{'HOME.product.productList.zaun.title' | translate}}</h2>
+        <gallery
+                [flexBorderSize]="3" 
+                [flexImageSize]="6"
+                [galleryName]="'ZaunGallery'"
+                (viewerChange)="galleryNotifier($event)"
+        >
+        </gallery>
+</div>

@@ -1,123 +1,27 @@
-<!--
-<md-toolbar class="collapse navbar-collapse" id="navigation" style="background-color: transparent;
-    z-index: 7;
-    position: absolute;
-    color: white;" class="fixed-header">
-		<span fxFlex></span>
-		<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
-			<li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-				<a #tooltip="mdTooltip"
-					[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgHome' | translate" 
-					md-button 
-					routerLink="/" 
-					aria-disabled="true"
-					class="button_wrapper"
-					><i class="material-icons">home</i>
-					<span>Home</span>
-					</a>
-			</li>
-			<li routerLinkActive="active">
-				<a #tooltip="mdTooltip"
-					[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgAbout' | translate" 
-					md-button 
-					routerLink="/about" aria-disabled="true" 
-					class="button_wrapper"
-				>
-				<i class="material-icons">nature_people</i>
-				<span>{{ 'HOME.menu.about' | translate }}</span>
-				</a>
-			</li>
-			<li routerLinkActive="active">
-				<a #tooltip="mdTooltip"
-					[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgContact' | translate" 
-					md-button 
-					routerLink="/contact" aria-disabled="true"
-					class="button_wrapper"
-				>
-				<i class="material-icons">contact_mail</i>
-				<span>{{ 'HOME.menu.contact' | translate }}</span>
-				</a>
-			</li>
-			<li>
-				<a md-icon-button [mdMenuTriggerFor]="menu">
-					<md-icon>translate</md-icon>
-					</a>
-					<md-menu #menu="mdMenu">
-					<button md-menu-item *ngFor="let lang of translate.getLangs()" (click)="translate.use(lang)">
-						<span>{{lang}}</span>
-					</button>
-					</md-menu>
-			</li>
-		</ul>
-</md-toolbar>
--->
-
-<nav class="navbar navbar-inverse" style="
-    padding: 0px;
-    margin: 0px;
-    border-radius: 0px;
-	background-color: white;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="myNavbar" style="
-    color: black;
-">
-<div>
-	<i class="material-icons">menu</i>
-	</div> 
-      </button>
-    </div>
-      <div class="collapse navbar-collapse" id="myNavbar" [ngbCollapse]="isCollapsed">
-      <md-toolbar class="collapse navbar-collapse" id="navigation" class="fixed-header"  style="
-	background-color: white;">
-					<span fxFlex></span>
-					<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
-						<li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-							<a #tooltip="mdTooltip"
-								[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgHome' | translate" 
-								md-button 
-								routerLink="/" 
-								aria-disabled="true"
-								class="button_wrapper"
-								><i class="material-icons">home</i>
-								<span>Home</span>
-								</a>
-						</li>
-						<li routerLinkActive="active">
-							<a #tooltip="mdTooltip"
-								[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgAbout' | translate" 
-								md-button 
-								routerLink="/about" aria-disabled="true" 
-								class="button_wrapper"
-							>
-							<i class="material-icons">nature_people</i>
-							<span>{{ 'HOME.menu.about' | translate }}</span>
-							</a>
-						</li>
-						<li routerLinkActive="active">
-							<a #tooltip="mdTooltip"
-								[mdTooltip]="'HOME.toolbar.sideMenuTooltipMsgContact' | translate" 
-								md-button 
-								routerLink="/contact" aria-disabled="true"
-								class="button_wrapper"
-							>
-							<i class="material-icons">contact_mail</i>
-							<span>{{ 'HOME.menu.contact' | translate }}</span>
-							</a>
-						</li>
-						<li>
-							<a md-icon-button [mdMenuTriggerFor]="menu">
-								<md-icon>translate</md-icon>
-								</a>
-								<md-menu #menu="mdMenu">
-								<button md-menu-item *ngFor="let lang of translate.getLangs()" (click)="translate.use(lang)">
-									<span>{{lang}}</span>
-								</button>
-								</md-menu>
-						</li>
-					</ul>
-			</md-toolbar>
-    	</div>
-  </div>
-</nav>
+<mat-toolbar color="primary" class="fixed-header">
+				<button mat-button class="app-menu-button" (click)="sidenavRef.toggle()">
+						<i class="material-icons">menu</i>
+				</button>
+				<button mat-button class="app-menu-button" routerLink="/">
+						<span style="font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;">DOREX</span>
+				</button>
+				<span class="example-spacer"></span>
+				<mat-icon class="example-icon" routerLink="/">home</mat-icon>
+				<mat-icon class="example-icon" routerLink="/contact">contact_mail</mat-icon>
+				<button mat-icon-button [matMenuTriggerFor]="matmenu">
+						<mat-icon>public</mat-icon>
+				</button>
+				<mat-menu #matmenu="matMenu">
+						<button mat-menu-item *ngFor="let lang of translate.getLangs()" [value]="lang" (click)="translate.use(lang)">
+								<mat-icon>flag</mat-icon>
+								<span>
+										{{lang}}
+								</span>
+						</button>
+				</mat-menu>
+				<!----<mat-select placeholder="" [value]="selectedValue">
+					<mat-option *ngFor="let lang of translate.getLangs()" [value]="lang" (click)="translate.use(lang)">
+					  {{ lang }}
+					</mat-option>
+				  </mat-select>-->
+</mat-toolbar>

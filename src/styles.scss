@@ -1,0 +1,289 @@
+/*!
+ * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* You can add global styles to this file, and also import other style files */
+@import 'angular-meterial-theme.scss';
+@font-face { font-family: "Helvetica-Neue-Bold"; src: url("./assets/fonts/helvetica-neue-bold.ttf"); }
+@font-face { font-family: "Helvetica-Neue-Medium"; src: url("./assets/fonts/HelveticaNeueMedium.woff"); }
+
+html,
+body {
+  font-family: Helvetica-Neue-Medium, 'Helvetica Neue Medium', sans-serif;
+
+  // Helps fonts on OSX looks more consistent with other systems
+  // Isn't currently in button styles due to performance concerns
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h2 {
+    font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  mat-card-title {
+    font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif;
+  }
+
+  .mat-drawer-container {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  p {
+    font-family: Helvetica-Neue-Medium, 'Helvetica Neue Medium', sans-serif;
+  }
+
+  .mat-sidenav {
+    min-width: 15vw;
+
+    .mat-button {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      margin: 24px 0;
+    }
+  }
+
+  .demo-content {
+    padding-bottom: 32px;
+    box-sizing: border-box;
+  }
+
+  .mat-toolbar {
+    .mat-icon {
+      cursor: pointer;
+    }
+
+    .demo-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
+// stretch to screen size in fullscreen mode
+.demo-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+  max-width: 1400px;
+}
+.main-raised {
+  margin: -60px 30px 0;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+.main {
+  background: #fff;
+  position: relative;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+.docs-footer {
+  margin-top: 40px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.docs-footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.footer-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 8px;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0 40px;
+  padding: 0;
+}
+//background: url('assets/rsz_final_pic.png');
+
+
+.inner {
+  margin: 0 auto;
+  max-width: 1352px;
+  padding: 80px 114px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12);
+}
+
+.example-card {
+  width: 400px;
+}
+
+
+.example-icon {
+  padding: 5px 10px;
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow,
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger {
+  color: white;
+}
+
+.mat-select-arrow,
+.mat-select-disabled .mat-select-value,
+.mat-select-trigger {
+  color: white;
+
+}
+
+.mat-form-field-underline .mat-form-field-ripple {
+  color:white;
+}
+
+.mat-select-value {
+  color: white;
+}
+
+.dorex-header-section {
+  text-align: center;
+  position: relative;
+  height: 700px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('assets/rsz_final_pic.png') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: Helvetica-Neue-Bold, 'Helvetica Neue Bold', sans-serif !important;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.dorex-slogan {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 56px;
+  margin: 15px 5px;
+  padding-top: 160px;
+}
+
+.dorex-sub-slogan {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 15px 0 25px;
+}
+
+.example-form {
+    min-width: 100px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+.dorex-intro-section {
+  text-align: center;
+  position: relative;
+  //background-color: #4051b4;
+  background-size: cover;
+  //height: 450px;
+}
+@media screen and (max-width: 480px) {
+  .dorex-intro-section {
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    //height: 700px;
+  }
+}
+
+.dorex-final-section {
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  height: 200px;
+}
+@media screen and (max-width: 480px) {
+  .dorex-final-section {
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+  }
+}
+
+.dorex-inner {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dorex-intro-text {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.mat-toolbar.mat-primary {
+  background: #ffffff !important;
+  color: black !important;
+}

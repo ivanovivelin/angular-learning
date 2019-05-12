@@ -1,19 +1,10 @@
-    <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('assets/rsz_final_pic.png');">
-            <div class="container">
-                <div class="row">
-					<div class="col-md-6">
-						<h1 class="title">{{ 'HOME.page.title' | translate }}</h1>
-	                    <h4 [innerHTML]="'HOME.page.subtitle' | translate"></h4>
-	                    <br />
-						<!--
-	                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
-							<i class="fa fa-play"></i> Watch video
-						</a>
-						-->
-						<div class="center-block">
-					</div>
-					</div>
-                </div>
-            </div>
-        </div>
+<div class="dorex-header-section" fxFlex>
+		<div class="logo-font dorex-slogan mat-h1">{{ 'HOME.page.title' | translate }}</div>
+		<h4 class="logo-font dorex-sub-slogan" [innerHTML]="'HOME.page.subtitle' | translate"></h4>
+
+		<a href="#screens">
+		  <button mat-fab color="accent" android-fab  (click)="scroll()" style="margin-top:40px;">
+			<i class="material-icons">expand_more</i>
+		  </button>
+		</a>
+</div>
