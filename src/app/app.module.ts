@@ -2,7 +2,7 @@ import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -23,13 +23,10 @@ import { FenceComponent } from './main/features/tore/fence.component';
 import { ContactMainComponent } from './contact/contact-main.component';
 import { SharedModule } from './shared/shared.module';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
-// import { HighlightModule } from '@ngx-highlightjs';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
-// for AngularFireDatabase
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-// for AngularFireAuth
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
@@ -57,7 +54,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     SharedModule,
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     FlexLayoutModule,

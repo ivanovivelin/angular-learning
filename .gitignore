@@ -53,5 +53,6 @@ Thumbs.db
 
 # Firebase
 .firebaserc
+.firebase
 
 node_modules/

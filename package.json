@@ -1,7 +1,10 @@
 {
-  "name": "my-angular",
-  "version": "1.2.0",
+  "name": "dorex-my-angular",
+  "version": "1.3.0",
   "license": "MIT",
+  "pre-commit": [
+    "lint"
+  ],
   "private": true,
   "scripts": {
     "ng": "ng",
