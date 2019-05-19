@@ -50,6 +50,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+get-pip.py
 
 # Firebase
 .firebaserc

@@ -5,7 +5,7 @@ import { RailingsComponent } from './main/features/gelander/railings.component';
 import { DoorsComponent } from './main/features/zaun/doors.component';
 import { FenceComponent } from './main/features/tore/fence.component';
 import { HomeComponent } from './home/home.component';
-import {ContactMainComponent} from './contact/contact-main.component';
+import { ContactMainComponent } from './contact/contact-main.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
