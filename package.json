@@ -45,7 +45,7 @@
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "http-server": "^0.12.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "rxjs": "^6.5.2",
     "rxjs-compat": "^6.5.2",
